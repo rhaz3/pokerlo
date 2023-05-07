@@ -5,4 +5,8 @@ app.use(express.static('../PokerLO-contract/build/contracts'));
 app.get('/', function (req, res) {
   res.render('index.html');
 });
-app.listen(process.env.PORT || 3000);
+var port = process.env.PORT || 3000;
+var host = '0.0.0.0';
+app.listen(port, host, function() {
+  console.log('POKERLO listening on port 3000')
+});
