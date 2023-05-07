@@ -1,0 +1,20 @@
+body {
+  background-color: #D3D3D3;
+  color: #023020;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.title {
+  text-align: center;
+  font-size: 60px;
+}
+
+p {
+  display: inline;
+}

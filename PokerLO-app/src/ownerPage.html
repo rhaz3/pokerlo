@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>PokerLO</title>
+  </head>
+  <body>
+    <img src="images/cards.gif" class="logo" alt="cards" width="300px" height="300px">
+    <h1 class="title">PokerLO</h1>
+    <br>
+    <form>
+      <label for="address"><b>Add a player to the system:</b></label>
+      <br>
+      <p>Name: </p><input type="text" id="aP_player" name="aP_player">
+      <br>
+      <p>ELO: </p><input type="text" id="aP_elo" name="aP_elo">
+      <br>
+      <button type="button" id="addPlayer_btn">Add New Player</button>
+    </form>
+    <div id="aP_r"></div>
+    <br>
+    <form>
+      <label for="address"><b>Enter player's ID to add/subtract ELO: </b></label>
+      <br>
+      <input type="text" id="as_id" name="as_id" style="width:300px;">
+      <br>
+      <input type="text" id="a_elo" name="a_elo">
+      <button type="button" id="addELO_btn">Add ELO</button>
+      <br>
+      <input type="text" id="s_elo" name="s_elo">
+      <button type="button" id="subELO_btn">Subtract ELO</button>
+    </form>
+      <div id="as_r"></div>
+    <br>
+    <form>
+      <p><b> Find ID of player from the name: </b></p>
+      <input type="text" id="fp_name" name="fp_name">
+      <button type="button" id="findPlayerID_btn">Find ID</button>
+    </form>
+      <div id="findID_r"></div>
+      <br>
+    <form>
+      <p><b> Find name of player from ID: </b></p>
+      <input type="text" id="fp_id" name="fp_id">
+      <button type="button" id="findPlayerName_btn">Find Name</button>
+    </form>
+      <div id="findName_r"></div>
+      <br>
+    <form>
+      <p><b> Get ELO rating for a player: </b></p>
+      <input type="text" id="ge_id" name="ge_id">
+      <button type="button" id="getELO_btn">Get ELO</button>
+    </form>
+      <div id="gELO_r"></div>
+    <br>
+    <form>
+      <p><b> Update ELO rating for a list of players - NOTE: List of Participants must be seperated by commas only, no spaces!  </b></p>
+      <br>
+      <p>Buy-In: </p><input type="text" id="ue_buyin" name="ue_buyin">
+      <br>
+      <p>Total Number of Players: </p><input type="text" id="ue_totplayer" name="ue_totplayer">
+      <br>
+      <p>List of Participants: </p><input type="text" id="ue_id" name="ue_id">
+      <br>
+      <p>Places: </p><input type="text" id="ue_place" name="ue_place">
+      <br>
+      <button type="button" id="updateELO_btn">Update ELO</button>
+    </form>
+    <br>
+    <div id="uELO_r"></div>
+    <br>
+    <br>
+  <button onclick="userPage(true)">View Standard User Page</button>
+  </body>
+</html>
