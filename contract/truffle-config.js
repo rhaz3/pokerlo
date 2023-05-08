@@ -8,9 +8,9 @@ const mnemonic = "crazy hour humble insect bid machine amused stool liar valley 
 
 module.exports = {
   networks: {
-    goerli: {
-      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/e00719e767404716a9d3c82c5138df53`),
-      network_id: 5, // Goerli's network ID
+    sepolia: {
+      provider: () => new HDWalletProvider(mnemonic, `https://sepolia.infura.io/v3/e00719e767404716a9d3c82c5138df53`),
+      network_id: '11155111', // Goerli's network ID
       gas: 5500000,
     },
     // ... other networks

@@ -1,7 +1,7 @@
 App = {
   web3: null,
   contracts: {},
-  address: "0x237Fa62C5b62Fe960B60C272dF1c0E013220C8f9",
+  address: "0xE1535915Fa488fe676F2CD458E84F5519C9438a7",
   network_id: 5777, // 5777 for local
   handler: null,
   value: 1000000000000000000,
