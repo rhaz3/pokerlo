@@ -5,6 +5,7 @@ app.use(express.static('../app/src/'));
 app.use(express.static('../contract/build/contracts'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, "src/index.html"));
+  res.sendFile(path.join(__dirname, "src/images/poker.webp"));
 });
 var port = process.env.PORT || 3000;
 var host = '0.0.0.0';
